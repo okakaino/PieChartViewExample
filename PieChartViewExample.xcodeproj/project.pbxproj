@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		9F9D20731EE21A7800EE2E5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9D20721EE21A7800EE2E5C /* AppDelegate.swift */; };
-		9F9D20751EE21A7800EE2E5C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9D20741EE21A7800EE2E5C /* ViewController.swift */; };
 		9F9D20781EE21A7800EE2E5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F9D20761EE21A7800EE2E5C /* Main.storyboard */; };
 		9F9D207A1EE21A7800EE2E5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F9D20791EE21A7800EE2E5C /* Assets.xcassets */; };
 		9F9D207D1EE21A7800EE2E5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F9D207B1EE21A7800EE2E5C /* LaunchScreen.storyboard */; };
+		9FB393851EF1E9A300C3017A /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB393841EF1E9A300C3017A /* PieChartView.swift */; };
+		9FE599411EF08B7C0030E94E /* PieChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE599401EF08B7C0030E94E /* PieChartViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9F9D206F1EE21A7800EE2E5C /* DrawRect Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DrawRect Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F9D206F1EE21A7800EE2E5C /* PieChartViewExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PieChartViewExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F9D20721EE21A7800EE2E5C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9F9D20741EE21A7800EE2E5C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9F9D20771EE21A7800EE2E5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9F9D20791EE21A7800EE2E5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F9D207C1EE21A7800EE2E5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F9D207E1EE21A7800EE2E5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FB393841EF1E9A300C3017A /* PieChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
+		9FE599401EF08B7C0030E94E /* PieChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieChartViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +40,7 @@
 		9F9D20661EE21A7800EE2E5C = {
 			isa = PBXGroup;
 			children = (
-				9F9D20711EE21A7800EE2E5C /* DrawRect Test */,
+				9F9D20711EE21A7800EE2E5C /* PieChartViewExample */,
 				9F9D20701EE21A7800EE2E5C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,30 +48,31 @@
 		9F9D20701EE21A7800EE2E5C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9F9D206F1EE21A7800EE2E5C /* DrawRect Test.app */,
+				9F9D206F1EE21A7800EE2E5C /* PieChartViewExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9F9D20711EE21A7800EE2E5C /* DrawRect Test */ = {
+		9F9D20711EE21A7800EE2E5C /* PieChartViewExample */ = {
 			isa = PBXGroup;
 			children = (
 				9F9D20721EE21A7800EE2E5C /* AppDelegate.swift */,
-				9F9D20741EE21A7800EE2E5C /* ViewController.swift */,
+				9FE599401EF08B7C0030E94E /* PieChartViewController.swift */,
+				9FB393841EF1E9A300C3017A /* PieChartView.swift */,
 				9F9D20761EE21A7800EE2E5C /* Main.storyboard */,
 				9F9D20791EE21A7800EE2E5C /* Assets.xcassets */,
 				9F9D207B1EE21A7800EE2E5C /* LaunchScreen.storyboard */,
 				9F9D207E1EE21A7800EE2E5C /* Info.plist */,
 			);
-			path = "DrawRect Test";
+			path = PieChartViewExample;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9F9D206E1EE21A7800EE2E5C /* DrawRect Test */ = {
+		9F9D206E1EE21A7800EE2E5C /* PieChartViewExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9F9D20811EE21A7800EE2E5C /* Build configuration list for PBXNativeTarget "DrawRect Test" */;
+			buildConfigurationList = 9F9D20811EE21A7800EE2E5C /* Build configuration list for PBXNativeTarget "PieChartViewExample" */;
 			buildPhases = (
 				9F9D206B1EE21A7800EE2E5C /* Sources */,
 				9F9D206C1EE21A7800EE2E5C /* Frameworks */,
@@ -79,9 +82,9 @@
 			);
 			dependencies = (
 			);
-			name = "DrawRect Test";
+			name = PieChartViewExample;
 			productName = "DrawRect Test";
-			productReference = 9F9D206F1EE21A7800EE2E5C /* DrawRect Test.app */;
+			productReference = 9F9D206F1EE21A7800EE2E5C /* PieChartViewExample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -100,7 +103,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9F9D206A1EE21A7800EE2E5C /* Build configuration list for PBXProject "DrawRect Test" */;
+			buildConfigurationList = 9F9D206A1EE21A7800EE2E5C /* Build configuration list for PBXProject "PieChartViewExample" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -113,7 +116,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9F9D206E1EE21A7800EE2E5C /* DrawRect Test */,
+				9F9D206E1EE21A7800EE2E5C /* PieChartViewExample */,
 			);
 		};
 /* End PBXProject section */
@@ -136,7 +139,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F9D20751EE21A7800EE2E5C /* ViewController.swift in Sources */,
+				9FB393851EF1E9A300C3017A /* PieChartView.swift in Sources */,
+				9FE599411EF08B7C0030E94E /* PieChartViewController.swift in Sources */,
 				9F9D20731EE21A7800EE2E5C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -204,7 +208,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -249,7 +253,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -262,9 +266,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "DrawRect Test/Info.plist";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = PieChartViewExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.oneteque.DrawRect-Test";
+				PRODUCT_BUNDLE_IDENTIFIER = com.curisious.PieChartViewExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -274,9 +280,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "DrawRect Test/Info.plist";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = PieChartViewExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.oneteque.DrawRect-Test";
+				PRODUCT_BUNDLE_IDENTIFIER = com.curisious.PieChartViewExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -285,7 +293,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9F9D206A1EE21A7800EE2E5C /* Build configuration list for PBXProject "DrawRect Test" */ = {
+		9F9D206A1EE21A7800EE2E5C /* Build configuration list for PBXProject "PieChartViewExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9F9D207F1EE21A7800EE2E5C /* Debug */,
@@ -294,13 +302,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9F9D20811EE21A7800EE2E5C /* Build configuration list for PBXNativeTarget "DrawRect Test" */ = {
+		9F9D20811EE21A7800EE2E5C /* Build configuration list for PBXNativeTarget "PieChartViewExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9F9D20821EE21A7800EE2E5C /* Debug */,
 				9F9D20831EE21A7800EE2E5C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
