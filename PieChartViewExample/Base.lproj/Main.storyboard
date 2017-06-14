@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Pie Chart View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="PieChartViewController" customModule="DrawRect_Test" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zWd-uQ-BJH" customClass="PieChartView" customModule="DrawRect_Test" customModuleProvider="target">
+                                <rect key="frame" x="112" y="258" width="150" height="150"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="0RO-U7-4Tj"/>
+                                    <constraint firstAttribute="height" constant="150" id="xlH-Ku-9hz"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zxB-Km-s0W">
+                                <rect key="frame" x="59" y="557" width="257" height="90"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="SDZ-K9-feQ">
+                                        <rect key="frame" x="48" y="0.0" width="161" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EZF-m9-hHz">
+                                                <rect key="frame" x="0.0" y="0.0" width="57" height="30"/>
+                                                <state key="normal" title="Animate"/>
+                                                <connections>
+                                                    <action selector="startSpringAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dQF-HG-4Of"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dyt-aa-okh">
+                                                <rect key="frame" x="77" y="0.0" width="84" height="30"/>
+                                                <state key="normal" title="Toggle Type">
+                                                    <color key="titleColor" red="0.23007503300000001" green="0.81041531739999995" blue="0.78032792370000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="toggleType:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p8g-vN-4kZ"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="d7v-R1-7mL">
+                                        <rect key="frame" x="33" y="30" width="191" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lPC-pL-fls">
+                                                <rect key="frame" x="0.0" y="0.0" width="94" height="30"/>
+                                                <state key="normal" title="Change Color"/>
+                                                <connections>
+                                                    <action selector="changeColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2n6-dx-ptB"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xJr-nI-uUG">
+                                                <rect key="frame" x="114" y="0.0" width="77" height="30"/>
+                                                <state key="normal" title="Clear Color">
+                                                    <color key="titleColor" red="0.23007503300000001" green="0.81041531739999995" blue="0.78032792370000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="clearColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t4k-Z8-sJJ"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="qQj-7h-k2V">
+                                        <rect key="frame" x="0.0" y="60" width="257" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j4S-1x-GSs">
+                                                <rect key="frame" x="0.0" y="0.0" width="115" height="30"/>
+                                                <state key="normal" title="Increment Count"/>
+                                                <connections>
+                                                    <action selector="increment:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Xl-GF-6m0"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J8W-SG-fNe">
+                                                <rect key="frame" x="135" y="0.0" width="122" height="30"/>
+                                                <state key="normal" title="Decrement Count">
+                                                    <color key="titleColor" red="0.23007503300000001" green="0.81041531739999995" blue="0.78032792370000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="decrement:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bXg-Hi-2xb"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zWd-uQ-BJH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="haX-Sp-3zx"/>
+                            <constraint firstItem="zWd-uQ-BJH" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="r9M-Q3-A1L"/>
+                            <constraint firstItem="zxB-Km-s0W" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xHd-uQ-y3w"/>
+                            <constraint firstAttribute="bottom" secondItem="zxB-Km-s0W" secondAttribute="bottom" constant="20" symbolic="YES" id="yjM-Eg-GKX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pieChartView" destination="zWd-uQ-BJH" id="lgx-eG-3yA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
